@@ -1,0 +1,197 @@
+
+html,body
+{
+    direction: rtl;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body {
+   font-family: 'Droid Arabic Naskh';
+   font-style: normal; 
+}
+
+nav {
+  padding-top: 5px;
+  background: rgba(45, 45, 45, 0.7);
+  color: #fff;
+  height: 40px;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li {
+    margin-left: 15px;
+    display: block;
+    position: relative;
+    float: right;
+    -webkit-transition-duration: 0.55s;
+    transition-duration: 0.5s;
+}
+li ul {
+    display: none;
+}
+ul li a {
+    text-align: center;
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 1px;
+    white-space: nowrap;
+}
+
+li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+li:hover li {
+    float: none;
+    font-size: 14px;
+}
+li:hover a {   background: rgba(45, 45, 45, 0.7); }
+li:hover li a:hover {
+   color: #eee;
+
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+color: #eee;
+}
+
+#footer {
+padding-top: 5px;
+color: #fff;
+bottom: 0px;
+right: 0px;
+position: absolute;
+left: 0px;
+  background: rgba(45, 45, 45, 0.7);
+-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.searcharea {
+  text-align: center;
+  height: 20%;
+  padding-top: 10%;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.searchform {
+text-align: center;
+}
+
+.searchtext {
+font-size: 22px;
+height: 50px;
+border: 1px solid #333399;
+width: 50%;
+}
+
+.searchbutton {
+    margin: 0px 3px;
+    display: inline-block;
+    vertical-align: top;
+    background: #3366CC repeat scroll 0% 0%;
+    border: none;
+    color: #FFF;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    min-width: 54px;
+    padding: 27px 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "startpage-font";
+  src:url("fonts/startpage-font.eot");
+  src:url("fonts/startpage-font.eot?#iefix") format("embedded-opentype"),
+    url("fonts/startpage-font.woff") format("woff"),
+    url("fonts/startpage-font.ttf") format("truetype"),
+    url("fonts/startpage-font.svg#startpage-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "startpage-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "startpage-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-rss:before {
+  content: "b";
+}
+.icon-search:before {
+  content: "c";
+}
+.icon-facebook-circled:before {
+  content: "d";
+}
+.icon-facebook-squared:before {
+  content: "a";
+}
+.icon-github-square:before {
+  content: "e";
+}
+.icon-twitter-square:before {
+  content: "f";
+}
+
+@font-face {
+    font-family: 'Droid Arabic Naskh';
+        src: url('http://openfontlibrary.org/assets/fonts/droid-arabic-naskh/fd4b27f3b16500224174d4930a24ddfc/0968720cd2bfeb792da963c918c4b9a6/DroidArabicNaskhBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'Droid Arabic Naskh';
+        src: url('http://openfontlibrary.org/assets/fonts/droid-arabic-naskh/fd4b27f3b16500224174d4930a24ddfc/791f577ddc8e608ef0d842d070bcac23/DroidArabicNaskhRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
